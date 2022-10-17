@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.p-header{
+height: rem(100);
+}
+
+.p-header__inner{
+height: inherit;
+display: flex;
+align-items: center;
+padding-left: rem(50);
+}
+
+.p-header__logo{
+    height: inherit;
+    width: rem(260);
+}
+.p-header__nav{
+display: flex;
+height: inherit;
+}
+.p-header__contact{
+    display: block;
+}
