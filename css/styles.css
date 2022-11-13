@@ -229,7 +229,7 @@ select::-ms-expand {
   display: flex;
 }
 
-.p-gnav__item {
+.p-gnav__items {
   height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,9 +241,32 @@ select::-ms-expand {
 
 .p-gnav__item {
   height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.p-gnav__item a {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-gnav__item a {
+  margin-right: 30px;
+  margin-right: 1.875rem;
+}
+
+.p-gnav__item:last-child a {
+  margin-right: 0px;
+  margin-right: 0rem;
 }
 
 .p-header {
@@ -265,18 +288,63 @@ select::-ms-expand {
 
 .p-header__logo {
   height: inherit;
-  width: 260px;
-  width: 16.25rem;
-}
-
-.p-header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 260px;
+  width: 16.25rem;
+  margin-right: auto;
+}
+
+.p-header__logo a {
   height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-header__inner {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+  padding-left: 3.125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-header__inner {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.p-header__right {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-header__nav {
+  margin-right: 38px;
+  margin-right: 2.375rem;
 }
 
 .p-header__contact {
   display: block;
+  background: transparent linear-gradient(222deg, #e81a2b 0%, #d81828 0%, #e1192a 0%, #740d16 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */
