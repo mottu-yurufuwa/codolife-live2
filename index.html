@@ -24,23 +24,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./js/script.js"></script>
+
 </head>
 <body>
 
 
   <header class="l-header p-header js-header">
     <div class="p-header__inner">
-    <div class="p-header__logo"><a href=""><img src="./images/common/logo.svg" alt=""></a></div>
-    <div class="p-header__rigth">
+    <div class="p-header__logo"><a href="tukasan"><img src="./images/common/logo.svg" alt=""></a></div>
+    <div class="p-header__right">
         <nav class="p-header__nav p-gnav">
           <ul class="p-gnav__items">
-            <li class="g-nav__item"><a href="">当社について</a></li>
-            <li class="g-nav__item"><a href="">サービス</a></li>
-            <li class="g-nav__item"><a href="">制作実績</a></li>
-            <li class="g-nav__item"><a href="">コラム</a></li>
+            <li class="p-gnav__item"><a href="">当社について</a></li>
+            <li class="p-gnav__item"><a href="">サービス</a></li>
+            <li class="p-gnav__item"><a href="">制作実績</a></li>
+            <li class="p-gnav__item"><a href="">コラム</a></li>
           </ul>
         </nav>
       </div>
@@ -53,7 +51,7 @@
         </div>
         <div class="p-header__overlay js-header-overlay"></div>
       </div>
-      <div class="p-header__menu p-drawer__menu js-drawer__menu">
+      <div class="p-header__menu p-drawer-menu js-drawer-menu">
         <ul class="p-drawer-menu__items js-drawer-bottom">
           <li class="p-drawer-menu__item js-drawer-menuItem">
             <a href=""><span class="p-drawer-menu__item-line"></span></a>
@@ -62,7 +60,35 @@
       </div>
     </div>
   </header>
-  
+  <div class="p-mainview">
+    <picture class="p-mainview__img">
+      <source media="(max-width:768px )" srcset="./images/top/mv-sp.jpg">
+      <img src="./images/top/mv-pc.jpg" alt="集客できるホームページを">
+    </picture>
+    <picture class="p-mainview__line01">
+      <source srcset="./images/top/sankaku-sp.png" media="(max-width:768px )" />
+      <div class="p-mainview__line01">
+      <img src="./images/top/FV-sankaku.png" alt="集客できるホームページを">
+    </div>
+    </picture>
+    <picture class="p-mainview__line02">
+      <source media="(max-width:768px )" srcset="./images/top/hisigata-sp.png">
+      <div class="p-mainview__line02">
+      <img src="./images/top/FV-hisigata.png" alt="集客できるホームページを">
+    </div>
+    </picture>
 
+    <h1 class="p-mainview__title">集客できる<br>ホームページを</h1>
+
+
+
+  </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./js/script.js"></script>
 </body>
 </html>
