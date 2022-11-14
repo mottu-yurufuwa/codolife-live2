@@ -1,4 +1,6 @@
 
+
+
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
   var topBtn = $('.pagetop');
@@ -24,12 +26,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //ドロワーメニュー
-  $("#MenuButton").click(function () {
+  $(".c-hamburger").click(function () {
     // $(".l-drawer-menu").toggleClass("is-show");
     // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
+    $(".c-hamburger").toggleClass("open");
+    $(".p-drawer-menu").toggleClass('is-active');
 
   });
 

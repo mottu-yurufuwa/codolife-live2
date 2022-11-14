@@ -1,0 +1,35 @@
+@use "global" as *;
+.p-mainview{
+    position: relative;
+}
+.p-mainview__img {
+    width: 73.42%;
+    margin-left: auto;
+    position: relative;
+    display: block;
+}
+.p-mainview__line01 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: rem(294);
+}
+.p-mainview__line02 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: rem(788);
+}
+.p-mainview__title {
+    font-size: rem(80);
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    position: absolute;
+    right: rem(150);
+    bottom: rem(39);
+}

@@ -4,12 +4,25 @@
     height: inherit;
     display: flex;
 }
-.p-gnav__item{
+
+.p-gnav__items{
     height: inherit;
     display: flex;
     align-items: center;
 }
 .p-gnav__item{
     height: inherit;
+    display: flex;
     align-items: center;
 }
+.p-gnav__item a{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+.p-gnav__item a{
+  margin-right: rem(30);
+}
+.p-gnav__item:last-child a{
+    margin-right: rem(0);
+  }

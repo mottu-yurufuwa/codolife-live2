@@ -1,24 +1,61 @@
 @use "global" as *;
 
-.p-header{
-height: rem(100);
+.p-header {
+    height: rem(100);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 }
 
-.p-header__inner{
-height: inherit;
-display: flex;
-align-items: center;
-padding-left: rem(50);
-}
-
-.p-header__logo{
+.p-header__inner {
     height: inherit;
+    display: flex;
+    align-items: center;
+    padding-left: rem(50);
+}
+
+.p-header__logo {
+    height: inherit;
+    display: flex;
+    align-items: center;
     width: rem(260);
-}
-.p-header__nav{
-display: flex;
-height: inherit;
-}
-.p-header__contact{
+    margin-right: auto;
     display: block;
+}
+.p-header__logo a {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+.p-header__inner {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding-left: rem(50);
+    @include mq("md") {
+        padding-left: rem(20);
+        padding-right: rem(20);
+    }
+}
+.p-header__right {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    @include mq('md'){
+        display: none;
+    }
+}
+.p-header__nav {
+    margin-right: rem(38);
+}
+.p-header__contact {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    background: transparent linear-gradient(222deg, #e81a2b 0%, #d81828 0%, #e1192a 0%, #740d16 100%) 0% 0% ;
+    padding: 0 rem(44);
+    opacity: 1;
+    @include mq('md'){
+        display: none;
+    }
 }
